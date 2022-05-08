@@ -1,0 +1,110 @@
+div {
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+}
+
+h1, h2, h3, h4 {
+
+}
+
+figure {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 10px  10px  10px  10px;
+}
+
+button {
+    color: #ffffff;
+    background-color: #3882f6;
+}
+
+footer {
+    background-color: #1F2937;
+}
+
+.master {
+    background-color: #1F2937;
+}
+
+.header {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #1F2937;
+}
+
+.nav-menu {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #1F2937;
+}
+
+.hero-div {
+    color: #ffffff;
+    background-color: #1F2937;
+}
+
+.hero-landing {
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #F9FAF8;
+    background-color: #1F2937;
+}
+
+.hero-para {
+    color: #ffffff;
+    background-color: #1F2937;
+}
+
+.signup {
+
+}
+
+.placeholder {
+    display: block;
+    width: 400px;
+    height: 200px;
+    padding:5px;
+    color: #ffffff;
+    background-color: #E5E7EB;
+}
+
+.random-info {
+
+}
+
+.quote-master {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    background-color: #E5E7EB;   
+    color: #1F2937; 
+}
+
+.thor {
+    font-size: 18px;
+    font-weight: bold;   
+    color: #1F2937; 
+}
+
+.cta-master {
+    background-color: #3882f6;
+}
+
+.cta {
+    color: #ffffff;
+    background-color: #3882f6;
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #1F2937;
+}
