@@ -1,110 +1,366 @@
-div {
-    padding: 30px;
-    margin-bottom: 10px;
+/* ------ CSS for Landing Page Project via "The Odin Project" ------ */
+
+/* ------ Info Provided ------ */
+/*  Dark background color (header and footer)
+        #1F2937
+    Hero Main Text ("this website is awesome")
+        48px extra-bold #F9FAF8
+    Hero Secondary Text, Header Link Text
+        18px #E5E7EB
+    Header Logo Text 
+        24px #F9FAF8
+
+    Button color, call to action background color
+        #3882F6
+    Information header text
+        36px extra-bold #1F2937
+
+    Quote section background color
+        #E5E7EB
+    Quote text
+        36px light italic #1F2937  */
+
+/* ------
+.logo {
+  grid-area: lg;
+}
+.main-menu {
+  grid-area: mm;
+}
+.hero-div {
+  grid-area: hd;
+}
+.placeholder {
+  grid-area: pc;
+}
+.figs {
+  grid-area: figs;
+}
+.quote-master {
+  grid-area: qm;
+}
+.cta-master {
+  grid-area: cm;
+}
+.main-footer {
+  grid-area: mf;
+}  ------ */
+
+/* ------ Global Styles ------ */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto 300px 300px 300px 250px auto;
+  grid-template-areas: ;
 }
 
-body {
-    margin: 10px;
-    padding: 10px;
+header,
+footer {
 }
 
-h1, h2, h3, h4 {
+.grid > * {
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+ul,
+li {
+  list-style-type: none;
+  display: inline;
+  justify-content: space-between;
+  float: inline-start;
+}
+
+img {
 }
 
 figure {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-rows: 10px  10px  10px  10px;
+  /*  width: 400px;
+  height: 200px;
+  padding: 25px;
+  border-style: solid;
+  border-color: #a5acaf;
+  background-color: #a5acaf; */
 }
 
-button {
-    color: #ffffff;
-    background-color: #3882f6;
+/* ------ Header and Nav ------ */
+.head-master {
+  background-color: #1f2937;
+  grid-column: 1 / 3;
 }
 
-footer {
-    background-color: #1F2937;
+.logo,
+.main-menu,
+.hero-div,
+.hero-landing,
+.hero-para,
+.placeholder {
+  background-color: #1f2937;
+  color: #f9faf8;
 }
 
-.master {
-    background-color: #1F2937;
+.logo,
+.main-menu {
+  display: inline-flex;
+  font-size: 24px;
+  list-style-type: none;
 }
 
-.header {
-    display: inline-block;
-    color: #ffffff;
-    background-color: #1F2937;
-}
-
-.nav-menu {
-    display: inline-block;
-    color: #ffffff;
-    background-color: #1F2937;
-}
-
-.hero-div {
-    color: #ffffff;
-    background-color: #1F2937;
+.main-menu {
+  font-size: 18px;
+  color: #e5e7eb;
+  float: right;
 }
 
 .hero-landing {
-    font-size: 48px;
-    font-weight: extra-bold;
-    color: #F9FAF8;
-    background-color: #1F2937;
+  font-size: 48px;
+  font-weight: bolder;
 }
 
-.hero-para {
-    color: #ffffff;
-    background-color: #1F2937;
+.pc {
+  width: 400px;
+  height: 200px;
+  margin-top: 25px;
+  border-style: solid;
+  border-color: #a5acaf;
+  background-color: #a5acaf;
+  float: right;
 }
 
-.signup {
-
-}
-
-.placeholder {
-    display: block;
-    width: 400px;
-    height: 200px;
-    padding:5px;
-    color: #ffffff;
-    background-color: #E5E7EB;
-}
-
+/* ------ Some Random Information ------ */
+.figs,
 .random-info {
-
+  grid-column: 1 / 3;
+}
+.random-info {
+}
+.figures {
+  display: inline-block;
+  border: solid;
 }
 
+/* ------ Quote ------ */
 .quote-master {
-    background-color: #E5E7EB;
+  background-color: #e5e7eb;
+  grid-column: 1 / 3;
 }
 
 .quote {
-    font-size: 36px;
-    font-style: italic;
-    font-weight: lighter;
-    background-color: #E5E7EB;   
-    color: #1F2937; 
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  background-color: #e5e7eb;
+  color: #1f2937;
 }
 
 .thor {
-    font-size: 18px;
-    font-weight: bold;   
-    color: #1F2937; 
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f2937;
 }
 
+/* ------ Signup Button ------ */
 .cta-master {
-    background-color: #3882f6;
+  background-color: #3882f6;
+  grid-column: 1 / 3;
+  justify-content: center;
+  align-items: center;
 }
 
 .cta {
-    color: #ffffff;
-    background-color: #3882f6;
+  color: #ffffff;
+  background-color: #3882f6;
 }
 
-.footer {
-    color: #ffffff;
-    background-color: #1F2937;
+.signup {
 }
+
+/* ------ Footer ------ */
+.main-footer {
+  color: #ffffff;
+  background-color: #1f2937;
+  grid-column: 1 / 3;
+}
+
+/* ------ Reactive Design ------ */
+
+/*
+body {
+}
+
+h1,
+h2,
+h3,
+h4 {
+}
+
+figure {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
+/* figure {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 10px 10px 10px 10px;
+} *
+
+button {
+  color: #ffffff;
+  background-color: #3882f6;
+  border-radius: 5px;
+}
+
+header,
+footer {
+  background-color: #1f2937;
+}
+
+/* ------ Header and Nav ------ *
+.header {
+  background-color: #1f2937;
+}
+.logo {
+}
+.h-logo {
+  display: inline-flex;
+  font-size: 24px;
+  color: #f9faf8;
+}
+.nav-menu {
+  display: inline-flex;
+  font-size: 18px;
+  color: #e5e7eb;
+  justify-content: space-between;
+  float: right;
+}
+.hero-div {
+}
+.hero-landing {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #f9faf8;
+}
+.hero-para {
+  color: #f9faf8;
+}
+.placeholder {
+  display: inline-flex;
+  width: 400px;
+  height: 200px;
+  padding: 5px;
+  color: #ffffff;
+  background-color: #e5e7eb;
+}
+.fig-1 {
+}
+
+/* ------ Some Random Information ------ *
+
+.random-info {
+}
+.figures {
+  display: inline-block;
+  border: solid;
+}
+
+/* ------ Quote ------ *
+
+.quote-master {
+  background-color: #e5e7eb;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: lighter;
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.thor {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* ------ Signup Button ------ *
+
+.cta-master {
+  background-color: #3882f6;
+}
+
+.cta {
+  color: #ffffff;
+  background-color: #3882f6;
+}
+
+/* ------ Footer ------ *
+
+.footer {
+  color: #ffffff;
+  background-color: #1f2937;
+}
+------ */
+
+/* ------ Holy Grail Layout Master ------ */
+
+/* header,
+nav,
+article,
+aside,
+footer {
+  background: lightgray;
+  padding: 1em;
+}
+
+header,
+footer {
+  grid-column: 1 / 4;
+}
+
+article {
+  min-width: 15em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat (50%, 50%);
+  grid-template-rows: 30% 200px auto;
+  grid-gap: 0em;
+}
+
+.grid > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* ------
+.logo {
+  grid-area: lg;
+}
+.main-menu {
+  grid-area: mm;
+}
+.hero-div {
+  grid-area: hd;
+}
+.placeholder {
+  grid-area: pc;
+}
+.figs {
+  grid-area: figs;
+}
+.quote-master {
+  grid-area: qm;
+}
+.cta-master {
+  grid-area: cm;
+}
+.main-footer {
+  grid-area: mf;
+}  ------ */
